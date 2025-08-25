@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="HumanoidVerse: A versatile humanoid framework for vision-language guided multi-object rearrangement tasks.">
+  <meta property="og:title" content="HumanoidVerse: A Versatile Humanoid for Vision-Language Guided Multi-Object Rearrangement"/>
+  <meta property="og:description" content="HumanoidVerse: A Versatile Humanoid for Vision-Language Guided Multi-Object Rearrangement"/>
+  <meta property="og:url" content="https://haozhuo-zhang.github.io/HumanoidVerse-project-page/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/cyborg.png" />
+  <meta property="og:image:width" content="512"/>
+  <meta property="og:image:height" content="512"/>
+
+
+  <!--meta name="twitter:title" content="TWITTER BANNER TITLE META TAG"-->
+  <!--meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!--meta name="twitter:image" content="static/images/your_twitter_banner_image.png"-->
+  <!--meta name="twitter:card" content="summary_large_image"-->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="HumanoidVerse, The University of Manchester, X-Humanoid, Haozhuo Zhang, HKUST, Multi-Object, Vision-Language, Humanoid">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HumanoidVerse</title>
+  <link rel="icon" type="image/x-icon" href="static/images/cyborg.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">HumanoidVerse: A Versatile Humanoid for Vision-Language Guided Multi-Object Rearrangement</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://haozhuo-zhang.github.io/" target="_blank">Haozhuo Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  Jingkai Sun<sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://michelecaprio.wixsite.com/caprio" target="_blank">Michele Caprio</a><sup>2</sup>,</span>
+                    <span class="author-block"></span>
+                      Jian Tang<sup>1</sup>,</span>
+                      <span class="author-block"></span>
+                        <a href="https://www.shanghangzhang.com/" target="_blank">Shanghang Zhang</a><sup>3</sup>,</span><br>
+                        <span class="author-block"></span>
+                          <a href="https://github.com/jonyzhang2023" target="_blank">Qiang Zhang</a><sup>1, 4*</sup>,</span>
+                          <span class="author-block"></span>
+                            <a href="https://panweihit.github.io/" target="_blank">Wei Pan</a><sup>2*</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup>X-Humanoid&nbsp;&nbsp;
+                      <sup>2</sup>The University of Manchester&nbsp;&nbsp;
+                      <sup>3</sup>Peking University&nbsp;&nbsp;
+                      <sup>4</sup>HKUST (Guangzhou)
+                    </span>                    
+                    <span class="eql-cntrb">
+                      <small><br><sup>*</sup>Corresponding author</small>
+                    </span>
+                    <br>
+                  
+                    <!-- 横排 logo -->
+                    <div class="author-logos" style="margin-top:10px;">
+                      <img src="static/images/Institutions.png" alt="Manchester logo">
+                    </div>
+                  </div>
+                  
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- GitHub Code link -->
+                    <span class="link-block">
+                      <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                              <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                      </a>
+                  </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" data-src="static/videos/first-video.webm"
+        controls muted loop style="width:100%; height:auto;">
+      </video>
+      <img src="static/images/first img.png" id="tree" alt="Description of the image" style="height: 100%;">
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce HumanoidVerse, a novel framework for vision-language guided humanoid control that enables a single physically simulated robot to perform long-horizon, multi-object rearrangement tasks across diverse scenes. Unlike prior methods that operate in fixed settings with single-object interactions, our approach supports consecutive manipulation of multiple objects, guided only by natural language instructions and egocentric camera RGB observations. HumanoidVerse is trained via a multi-stage curriculum using a dual-teacher distillation pipeline, enabling fluid transitions between sub-tasks without requiring environment resets. To support this, we construct a large-scale dataset comprising 350 multi-object tasks spanning four room layouts. Extensive experiments in the Isaac Gym simulator demonstrate that our method significantly outperforms prior state-of-the-art in both task success rate and spatial precision, and generalizes well to unseen environments and instructions. Our work represents a key step toward robust, general-purpose humanoid agents capable of executing complex, sequential tasks under real-world sensory constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Training Process</h2>
+      <img src="static/images/main_img.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        Multi-stage training pipeline of HumanoidVerse: Stage 1 trains a teacher model via RL for single-object rearrangement. Stage 2 extends it to releasing and stepping back. Stage 3 trains a second teacher model to manipulate a second object from the end state of Stage 2. In Stage 4, the student VLA model, taking real-time visual and language inputs, is distilled from the two teacher models. The first teacher model is used to distill during the initial rearrangement, and the second after releasing and retreating. Both are unified into a single student model for full multi-object rearrangement.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Experiments Results</h2>
+      <img src="static/images/exp1.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <!--h2 class="subtitle has-text-centered">
+        Multi-stage training pipeline of HumanoidVerse: Stage 1 trains a teacher model via RL for single-object rearrangement. Stage 2 extends it to releasing and stepping back. Stage 3 trains a second teacher model to manipulate a second object from the end state of Stage 2. In Stage 4, the student VLA model, taking real-time visual and language inputs, is distilled from the two teacher models. The first teacher model is used to distill during the initial rearrangement, and the second after releasing and retreating. Both are unified into a single student model for full multi-object rearrangement.
+      </h2-->
+      
+      <img src="static/images/exp2.png" id="tree" alt="Description of the image" style="height: 100%;">
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Comparison Between HumanVLA (Upper) and HumanoidVerse (Lower) [Bedroom]</h2>
+      <h2 class="title is-4">"Move the pillow from the table to the center of the bed, then place the laptop on the desk next to the chair."</h2>
+      
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/002.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/002_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanVLA
+      </h2>
+      
+      <!-- 使用 Bulma 的 columns -->
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body/002.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body/002_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanoidVerse
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Comparison Between HumanVLA (Upper) and HumanoidVerse (Lower) [Kitchen]</h2>
+      <h2 class="title is-4">"Move the coffeemaker from the right side of the kitchen island to the right side of the countertop, then Move the trashbin from the right side of the countertop to the left side of the countertop."</h2>
+      
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/003.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/003_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanVLA
+      </h2>
+      
+      <!-- 使用 Bulma 的 columns -->
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body/003.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body/003_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanoidVerse
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Comparison Between HumanVLA (Upper) and HumanoidVerse (Lower) [Livingroom]</h2>
+      <h2 class="title is-4">"Move the chair to the right side of the table, then move the yellow vase from the tv stand to the table."</h2>
+      
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/004.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/004_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanVLA
+      </h2>
+      
+      <!-- 使用 Bulma 的 columns -->
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body/004.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body/004_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanoidVerse
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Comparison Between HumanVLA (Upper) and HumanoidVerse (Lower) [Warehouse]</h2>
+      <h2 class="title is-4">"Lift the right box from the ground to the right of the bottom shelf, then move the other box on the ground to the left of the bottom shelf."</h2>
+      
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/005.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body_base/005_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanVLA
+      </h2>
+      
+      <!-- 使用 Bulma 的 columns -->
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/body/005.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+        <div class="column">
+          <video poster="" data-src="static/videos/body/005_body.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        HumanoidVerse
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">More Results of HumanoidVerse [Bedroom]</h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/bedroom/003.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the bedside table from its position to the front side of the bed, <br>
+        then move the laptop from the bed to the desk."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/bedroom/017.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the laptop from the bed to the desk with an office chair, <br>
+        then move the chair from the left side of the desk to the front side of the desk."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/bedroom/055.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the pillow from the office table to the left side of the bed, <br>
+        then move the laptop from the bed to the desk."
+      </h2>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">More Results of HumanoidVerse [Kitchen]</h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/kitchen/082.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the coffeemaker from the kitchen island to the right side near the corner, <br>
+        then move the trashbin from the right side of the countertop to the left side of the countertop."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/kitchen/156.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the trashbin from the right side of the leftmost counter to the floor next to the left side of the same counter, <br>
+        then move the coffeemaker from the kitchen island to the right side of the countertop, near the sink."
+      </h2>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">More Results of HumanoidVerse [Livingroom]</h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/livingroom/213.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the chair from its current position to the right side of the coffee table, <br>
+        then move the plant from the side table to the center of the wooden table."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/livingroom/223.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the chair to the right side of the table, closer to the center of the room, <br>
+        then move the blue and white vase from the tv stand to the center table."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/livingroom/241.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the plant from the black table to the center coffee table, <br>
+        then move the chair to the right side of the console table."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/livingroom/274.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the blue and white vase from the tv stand to the table, <br>
+        then move the chair to the right side of the room next to the head of the table."
+      </h2>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">More Results of HumanoidVerse [Warehouse]</h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/warehouse/307.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the left box on the ground to the right of the left shelf, <br>
+        then move the other box from the ground to the right of the right shelf."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/warehouse/309.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the right box to the left of the right shelf, <br>
+        then lift the other box from the ground to the right of the right shelf."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/warehouse/311.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the left box to the left of the left shelf, <br>
+        then move the other box to the left of the right shelf."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/warehouse/313.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the left box on the ground to the left of the bottom shelf, <br>
+        then move the other box from the ground to the right of the bottom shelf."
+      </h2>
+
+      <div class="columns is-vcentered">
+        <div class="column">
+          <video poster="" data-src="static/videos/normal/warehouse/345.mp4"
+            controls muted loop style="width:100%; height:auto;">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        "Move the right box to the right of the bottom shelf, <br>
+        then move the other box on the ground to the left of the bottom shelf."
+      </h2>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const videos = document.querySelectorAll("video[data-src]");
+      
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const video = entry.target;
+    
+          if (entry.isIntersecting) {
+            // 进入可视区域时加载并播放
+            if (!video.src) {
+              video.src = video.dataset.src;
+              video.load();
+            }
+            video.play();
+          } else {
+            // 离开可视区域时暂停，但不卸载资源
+            video.pause();
+          }
+        });
+      }, { threshold: 0.25 }); // 视频进入 25% 可见区域再加载
+      
+      videos.forEach(video => observer.observe(video));
+    });
+    </script>
+      
+      
+  </body>
+  </html>
